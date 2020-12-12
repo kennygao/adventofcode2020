@@ -1,7 +1,4 @@
-def lines(day):
-    with open(f"input/{day}.txt") as f:
-        return [line.rstrip("\n") for line in f]
-
+from common import lines
 
 seats = [list(line) for line in lines("11")]
 m, n = len(seats), len(seats[0])
