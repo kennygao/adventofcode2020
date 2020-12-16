@@ -5,4 +5,4 @@ def lines(day):
 
 def line_groups(day):
     with open(f"input/{day}.txt") as f:
-        return [group.split() for group in f.read().split("\n\n")]
+        return [group.rstrip("\n").split("\n") for group in f.read().split("\n\n")]
